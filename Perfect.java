@@ -18,7 +18,7 @@ public class Perfect {
         }
 
         if( sum == a )
-        	System.out.print( a + " is a perfect number since" + str );
+        	System.out.print( a + " is a perfect number since " + str );
         else
         	System.out.print( a + " is not a perfect number "); 
 
