@@ -11,7 +11,7 @@ public class Perfect {
 		for(int i= 2; i < a; i++){
            if(a % i == 0){
            	sum = sum + i;
-           	str = str + " + " + i;
+           	str = str + "+ " + i;
   
            }
 
