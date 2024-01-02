@@ -10,8 +10,10 @@ public class DamkaBoard {
 
 			for(int c = 1; c <= n; c++){
 
-				if(i % 2 != 0 && i != 1)
+				if(i % 2 != 0)
 					System.out.print( " " );
+				if ( c == n )
+					System.out.print( "*" );
 
 				System.out.print( "* " );
 			}
