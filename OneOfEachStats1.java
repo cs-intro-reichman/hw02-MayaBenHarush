@@ -25,15 +25,18 @@ public class OneOfEachStats1 {
 		 	    	b = true;
 
 		 	    count ++;
-		 	    sum = sum + count;
 
 		 	}
-		 	
+		 	sum = sum + count;
+
 		 
 		 	if ( count == 3)
-		 	     	three ++;
+		 	     three ++;
 		 	if ( count >= 4)
-		 	    	fourMore ++;
+		 	    fourMore ++;
+		 	if ( count == 2)
+		 		two++;
+
 
 		 	count = 0;
 		 	g = false;
