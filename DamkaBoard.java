@@ -11,7 +11,7 @@ public class DamkaBoard {
 			for(int c = 1; ( i % 2 ) != 0 && c <= n; c++){
 					System.out.print( "* " );	
 			}
-			for(int w = 1; ( i % 2 ) != 0 && c <= n; w++){
+			for(int w = 1; ( i % 2 ) != 0 && w <= n; w++){
 					System.out.print( " *" );	
 			}
 			System.out.println();
