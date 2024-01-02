@@ -5,24 +5,23 @@
  */
 public class OneOfEach {
 	public static void main (String[] args) {
-		boolean g == false ;
-		boolean b == false;
+		boolean g = false;
+		boolean b = false;
+		int count = 0;
 
-		for (int i = 0; g == false || b == false; i++) {
-		 	if ( Math.random() < 0.5 ){
-
-		 		g == true;
-		 		System.out.println( "g ");
+		while ( g == false || b == false) {
+		 	if ( (Math.random() ) < 0.5 ){
+		 		g = true;
+		 		System.out.print( "g ");
 		 	}
 		 	else {
-		 		b == true;
-		 		System.out.println( "b ");
-
-
-		 	}		 		
+		 		b = true;
+		 		System.out.print( "b ");
+		 	}
+		 	count ++;		 		
 		 }
 
-		System.out.println( " You made it... and you now have " + i + "children.");
+		System.out.println( " You made it... and you now have " + count + "children.");
 
 
 
