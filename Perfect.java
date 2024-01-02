@@ -6,12 +6,12 @@ public class Perfect {
 
 		int a = Integer.parseInt(args[0]);
 		int sum = 1;
-		String str = a + " = 1 "; 
+		String str = a + " = 1"; 
 
 		for(int i= 2; i < a; i++){
            if(a % i == 0){
            	sum = sum + i;
-           	str = str + "+ " + i;
+           	str = str + " + " + i;
   
            }
 

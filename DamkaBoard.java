@@ -7,10 +7,11 @@ public class DamkaBoard {
 		int n = Integer.parseInt(args[0]);
 
 		for(int i = 1; i <= n; i++){
-			if(i % 2 != 0)
-					System.out.print( " " );
 
 			for(int c = 1; c <= n; c++){
+
+				if(i % 2 != 0 && i != 1)
+					System.out.print( " " );
 
 				System.out.print( "* " );
 			}
