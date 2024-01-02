@@ -12,8 +12,6 @@ public class DamkaBoard {
 
 				if(i % 2 != 0)
 					System.out.print( " " );
-				if ( c == n )
-					System.out.print( "*" );
 
 				System.out.print( "* " );
 			}
