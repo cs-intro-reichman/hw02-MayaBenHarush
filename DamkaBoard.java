@@ -12,8 +12,6 @@ public class DamkaBoard {
 
 			for(int c = 1; c <= n; c++){
 
-				if (c == n)
-					System.out.print( "*" );	
 				else 
 					System.out.print( "* " );	  
 			}
