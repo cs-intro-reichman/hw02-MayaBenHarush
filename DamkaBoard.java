@@ -6,16 +6,20 @@ public class DamkaBoard {
 
 		int n = Integer.parseInt(args[0]);
 
-		for(int i = 1; i <= n; i++){
-			if(i % 2 == 0)
-					System.out.print( " " );
-
-			for(int c = 1; c <= n; c++){
+		for(int i = 0; i < n; i++){
+			if(i % 2 == 0 || i == 0){
+				for(int c = 0; c < n; c++){
 
 					System.out.print( "* " );	  
+			    }
 			}
-
+			else {
+				for(int c = 0; c < n; c++){
+					System.out.print( " *" );
+				}
+			}
 			System.out.println();
+
 		}		
 
 
