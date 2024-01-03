@@ -50,10 +50,10 @@ public class OneOfEachStats {
 
 		int max= Math.max( two, Math.max(three, fourMore));
 		if (max == two)
-			System.out.println(" The most common number of children is " + two + " or more.");
+			System.out.println(" The most common number of children is " + two + ".");
 		else
 			if (max == three)
-				System.out.println(" The most common number of children is " + three + " or more.");
+				System.out.println(" The most common number of children is " + three + ".");
 			else 
 				System.out.println(" The most common number of children is " + common + " or more.");
 
