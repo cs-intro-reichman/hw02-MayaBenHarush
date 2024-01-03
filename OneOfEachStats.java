@@ -43,26 +43,19 @@ public class OneOfEachStats {
 		 
 		}
 
-		int max= Math.max( two, Math.max(three, fourMore));
-		int common = 0 ;
-		if (max == two)
-			common = 2;
-		else 
-			if(max == three)
-				common = 3;
-			else 
-				common = 4;
-
-		System.out.println(" Average: " + (sum / t) + " children to get at least one of each gender." );
+		System.out.println(" Average: " + (sum / t) + " children to get at least one of each gender.");
 		System.out.println(" Number of families with 2 children: " + two );
 		System.out.println(" Number of families with 3 children: " + three);
 		System.out.println(" Number of families with 4 or more children: " + fourMore );
-		if (common == 4)
-			System.out.println(" The most common number of children is " + common + " or more.");
-		else 
-			System.out.println(" The most common number of children is " + common + "." );
 
-
+		int max= Math.max( two, Math.max(three, fourMore));
+		if (max == two)
+			System.out.println(" The most common number of children is " + two + " or more.");
+		else
+			if (max == three)
+				System.out.println(" The most common number of children is " + three + " or more.");
+			else 
+				System.out.println(" The most common number of children is " + common + " or more.");
 
 
 	}
