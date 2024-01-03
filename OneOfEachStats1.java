@@ -25,9 +25,8 @@ public class OneOfEachStats1 {
 		 	    	b = true;
 
 		 	    count ++;
-
+		 	    sum = sum + count;
 		 	}
-		 	sum = sum + count;
 
 		 
 		 	if ( count == 3)

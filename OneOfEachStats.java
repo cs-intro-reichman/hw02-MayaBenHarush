@@ -7,8 +7,6 @@ public class OneOfEachStats {
 		int seed = Integer.parseInt(args[1]);
 		// Initailizes a random numbers generator with the given seed value
         Random generator = new Random(seed);  
-		
-
 		int t = Integer.parseInt(args[0]);
 		double sum = 0;
 		int two = 0;
@@ -21,21 +19,23 @@ public class OneOfEachStats {
 		for( int i = 1; i <= t; i++){
 			while ( g == false || b == false) {
 
-				if ( (generator.nextDouble() ) < 0.5 )
+				if ( ( generator.nextDouble() ) < 0.5 )
 					g = true;
 		 	    else
 		 	    	b = true;
 
 		 	    count ++;
-		 	    sum = sum + count;
-
 		 	}
 		 	
-		 
+		 	sum = sum + count;
+
 		 	if ( count == 3)
-		 	     	three ++;
+		 	     three ++;
 		 	if ( count >= 4)
-		 	    	fourMore ++;
+		 	    fourMore ++;
+		 	if ( count == 2)
+		 		two++;
+
 
 		 	count = 0;
 		 	g = false;
@@ -61,7 +61,6 @@ public class OneOfEachStats {
 			System.out.println(" The most common number of children is " + common + " or more ");
 		else 
 			System.out.println(" The most common number of children is " + common );
-
 
 
 
