@@ -12,9 +12,12 @@ public class DamkaBoard {
 
 			for(int c = 1; c <= n; c++){
 
-			    System.out.print( "* " );	
+				if (c == n)
+					System.out.print( "*" );	
+				else 
+					System.out.print( "* " );	  
 			}
-			
+
 			System.out.println();
 		}		
 
